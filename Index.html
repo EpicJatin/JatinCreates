@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional web development services. Custom websites, Odoo e-commerce solutions, and high-performance landing pages for growing businesses.">
+    <title>Jatin Creates | Digital Solutions for Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-primary': '#0F172A', // Deeper, richer Navy/Black
+                        'brand-secondary': '#1E293B', // Professional Slate
+                        'brand-accent': '#10B981', // Emerald Green (Trust & Money)
+                        'brand-accent-hover': '#059669', 
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'subtle-bob': 'subtleBob 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        subtleBob: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-fade-in { opacity: 0; transition: opacity 1s, transform 1s; transform: translateY(20px); }
+        .section-visible { opacity: 1; transform: translateY(0); }
+        /* Professional Selection Color */
+        ::selection { background-color: #10B981; color: white; }
+    </style>
+</head>
+
+<body class="bg-brand-primary font-inter text-slate-300 antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Header -->
+    <header id="header" class="bg-brand-primary/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-extrabold text-white tracking-tight flex items-center gap-2">
+                    <span class="text-brand-accent">/</span>Jatin.creates
+                </a>
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#services" class="hover:text-brand-accent transition duration-300">Services</a>
+                    <a href="#portfolio" class="hover:text-brand-accent transition duration-300">Case Studies</a>
+                    <a href="#testimonials" class="hover:text-brand-accent transition duration-300">Reviews</a>
+                    <a href="#contact" class="bg-brand-accent text-white px-6 py-2.5 rounded-full hover:bg-brand-accent-hover transition duration-300 shadow-lg shadow-brand-accent/20">Get a Quote</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-white p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-secondary border-t border-gray-700">
+            <a href="#services" class="block text-center py-4 border-b border-gray-700 hover:text-brand-accent">Services</a>
+            <a href="#portfolio" class="block text-center py-4 border-b border-gray-700 hover:text-brand-accent">Case Studies</a>
+            <a href="#contact" class="block text-center py-4 bg-brand-accent/10 text-brand-accent font-bold">Get a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="py-24 md:py-32 relative overflow-hidden">
+            <!-- Background Glow -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-accent/10 rounded-full blur-[120px] -z-10"></div>
+            
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="max-w-4xl mx-auto">
+                    <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-brand-secondary border border-gray-700 animate-fade-in-up" style="animation-delay: 0.1s;">
+                        <span class="text-brand-accent text-xs font-bold tracking-wider uppercase">Available for New Projects</span>
+                    </div>
+                    <h1 class="text-4xl md:text-7xl font-extrabold text-white leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+                        Turn Your Traffic Into <br> <span class="text-brand-accent">Revenue.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.3s;">
+                        We build high-performance websites and Odoo e-commerce stores that look great and sell even better.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+                        <a href="#contact" class="bg-brand-accent text-white font-bold px-8 py-4 rounded-lg hover:bg-brand-accent-hover transition-all transform hover:-translate-y-1 shadow-xl shadow-brand-accent/20">
+                            Start Your Project
+                        </a>
+                        <a href="#portfolio" class="px-8 py-4 rounded-lg border border-gray-600 hover:border-white text-white font-medium transition-all hover:bg-white/5">
+                            View Recent Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Image / Laptop Mockup -->
+            <div class="relative mt-20 md:mt-28 container mx-auto px-4 animate-fade-in-up" style="animation-delay: 0.5s;">
+                <div class="bg-gray-800 p-2 rounded-t-2xl max-w-5xl mx-auto shadow-2xl border border-gray-700 animate-subtle-bob">
+                     <!-- This image placeholder represents a generic code/dashboard view. Ideally, replace with a screenshot of your HVAC or Odoo project -->
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/048/830/958/small_2x/modern-laptop-displaying-computer-code-on-screen-in-dark-room-setting-photo.jpeg" alt="Web Development Dashboard" class="rounded-t-lg w-full object-cover h-64 md:h-[500px] opacity-80">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Trust Bar -->
+        <section class="border-y border-gray-800 bg-brand-secondary/50 py-10">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">100%</h3>
+                        <p class="text-sm text-gray-400">Client Satisfaction</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">24/7</h3>
+                        <p class="text-sm text-gray-400">Support Available</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">Fast</h3>
+                        <p class="text-sm text-gray-400">Delivery Timeline</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">SEO</h3>
+                        <p class="text-sm text-gray-400">Optimized Core</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-brand-primary section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-accent font-bold tracking-wider text-sm">OUR EXPERTISE</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mt-3">Everything You Need to Grow</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="group bg-brand-secondary border border-gray-800 p-8 rounded-2xl hover:border-brand-accent transition-all duration-300">
+                        <div class="w-12 h-12 bg-brand-accent/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                             <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Custom Web Development</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Tailored websites built with modern technologies (HTML5, Tailwind, JS) that load fast and rank high on Google.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="group bg-brand-secondary border border-gray-800 p-8 rounded-2xl hover:border-brand-accent transition-all duration-300">
+                        <div class="w-12 h-12 bg-brand-accent/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                             <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Odoo E-commerce</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Complete setup of Odoo stores, inventory management integration, and payment gateway setup for retail businesses.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="group bg-brand-secondary border border-gray-800 p-8 rounded-2xl hover:border-brand-accent transition-all duration-300">
+                        <div class="w-12 h-12 bg-brand-accent/20 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                             <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Business Automation</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Automate your workflow. From WhatsApp integration to automated email responses, we save you time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Case Studies -->
+        <section id="portfolio" class="py-24 bg-brand-secondary border-t border-gray-800 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    <div class="max-w-2xl">
+                        <span class="text-brand-accent font-bold tracking-wider text-sm">SELECTED WORK</span>
+                        <h2 class="text-3xl md:text-5xl font-bold text-white mt-3">Recent Case Studies</h2>
+                    </div>
+                    <a href="#contact" class="hidden md:inline-block text-white border-b border-brand-accent pb-1 hover:text-brand-accent transition">Start your project &rarr;</a>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Project 1: HVAC Star -->
+                    <div class="group cursor-pointer">
+                        <div class="bg-gray-800 rounded-xl overflow-hidden mb-6 relative">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                            <!-- Use a real screenshot of HVAC star if possible -->
+                            <img src="https://static.wixstatic.com/media/487156_a6f92d23769845ada7ddeddc4cebb909~mv2.png/v1/fill/w_143,h_49,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/487156_a6f92d23769845ada7ddeddc4cebb909~mv2.png" alt="HVAC Star Website" class="w-full h-72 object-contain bg-gray-900 p-8 transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-accent transition">HVAC Star India</h3>
+                                <p class="text-gray-400 text-sm mb-4">Corporate Website • Lead Generation</p>
+                            </div>
+                            <a href="https://www.hvacstar.in/" target="_blank" class="p-3 bg-gray-800 rounded-full hover:bg-brand-accent text-white transition">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: MSS Clothing -->
+                    <div class="group cursor-pointer">
+                        <div class="bg-gray-800 rounded-xl overflow-hidden mb-6 relative">
+                            <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                            <img src="https://placehold.co/600x400/1F2937/FFFFFF?text=MSS+Clothing+Store&font=inter" alt="MSS Clothing Store" class="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                         <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-accent transition">MSS Clothing</h3>
+                                <p class="text-gray-400 text-sm mb-4">Odoo E-commerce • Payment Integration</p>
+                            </div>
+                            <a href="https://mssclothing.odoo.com/" target="_blank" class="p-3 bg-gray-800 rounded-full hover:bg-brand-accent text-white transition">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 md:py-28 bg-brand-primary section-fade-in">
+             <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="text-brand-accent font-semibold">CLIENT FEEDBACK</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-12">Trusted by Businesses and Individuals</h2>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-brand-secondary p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-400 mb-6">"Jatin is a true professional. He took our vision and turned it into a website that exceeded all our expectations. The process was smooth and he was incredibly responsive."</p>
+                        <div class="flex items-center">
+                            <img src="https://static.wixstatic.com/media/487156_9e126c4cfe2240f2a53f345c7dc6f8bb~mv2.jpg/v1/crop/x_0,y_0,w_875,h_874/fill/w_405,h_405,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/487156_9e126c4cfe2240f2a53f345c7dc6f8bb~mv2.jpg" alt="Client Avatar" class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold text-white">Shariq Siddiqui</h4>
+                                <p class="text-sm text-gray-500">CEO, HVAC Star</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-brand-secondary p-8 rounded-xl shadow-lg">
+                        <p class="text-gray-400 mb-6">"Working with Jatin was a game-changer for our online store. Our sales have increased significantly since the new site launch. Highly recommended!"</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/48x48/22C55E/FFFFFF?text=MS" alt="Client Avatar" class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold text-white">Mahan Singh Sisodiya</h4>
+                                <p class="text-sm text-gray-500">Founder, MSS Clothing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- CTA / Contact Section -->
+        <section id="contact" class="py-24 bg-brand-primary section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 md:p-16 relative overflow-hidden shadow-2xl border border-gray-700">
+                    <!-- Decor element -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-brand-accent/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
+
+                    <div class="grid lg:grid-cols-2 gap-12 relative z-10">
+                        <div>
+                            <span class="text-brand-accent font-bold tracking-wider text-sm">CONTACT US</span>
+                            <h2 class="text-3xl md:text-5xl font-bold text-white mt-3 mb-6">Have a project in mind?</h2>
+                            <p class="text-gray-400 text-lg mb-8">
+                                Whether you need a simple landing page or a complex e-commerce store, we are ready to help you scale.
+                            </p>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center text-gray-300">
+                                    <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center mr-4 text-brand-accent">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    </div>
+                                    <span>jatincreates@example.com</span>
+                                </div>
+                                <div class="flex items-center text-gray-300">
+                                    <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center mr-4 text-brand-accent">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    </div>
+                                    <span>+91 96850 39288</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form -->
+                        <form id="contactForm" class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700">
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="text-sm text-gray-400 mb-1 block">Your Name</label>
+                                    <input type="text" id="name" required class="w-full bg-gray-900 border border-gray-700 text-white px-4 py-3 rounded-lg focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="text-sm text-gray-400 mb-1 block">Email Address</label>
+                                    <input type="email" id="email" required class="w-full bg-gray-900 border border-gray-700 text-white px-4 py-3 rounded-lg focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="text-sm text-gray-400 mb-1 block">Project Details</label>
+                                    <textarea id="message" rows="4" required class="w-full bg-gray-900 border border-gray-700 text-white px-4 py-3 rounded-lg focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-brand-accent hover:bg-brand-accent-hover text-white font-bold py-4 rounded-lg transition-all shadow-lg hover:shadow-brand-accent/25">
+                                    Send via WhatsApp
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-gray-900 border-t border-gray-800 pt-16 pb-8">
+         <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left mb-8">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-2xl font-bold text-white">Jatin.creates</span>
+                    <p class="text-gray-500 text-sm mt-2">Building digital assets for modern businesses.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">GitHub</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-600 text-sm">&copy; 2025 Jatin Creates. All Rights Reserved.</p>
+            </div>
+         </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        });
+        
+        // Scroll Animation Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.section-fade-in').forEach(section => observer.observe(section));
+
+        // WhatsApp Form Logic
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const phoneNum = '919685039288'; 
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Professional Formatting for WhatsApp Message
+            const whatsappMessage = `*New Project Inquiry* \n\n*Name:* ${name}\n*Email:* ${email}\n*Details:* ${message}`;
+            
+            window.open(`https://wa.me/${phoneNum}?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
